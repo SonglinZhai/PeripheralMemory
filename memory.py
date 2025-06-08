@@ -36,22 +36,22 @@ from kan import MultKAN as KAN  # Official KAN implement is used
 CONFIG = {
     "name": "Peripheral Memory for LLMs",
     "gptj":{
-        "path": "/home/zhaisonglin/disk/songlin/resources/GPTJ/",
+        "path": "path/to/GPTJ/",
         "lm_embed_device": "self.model.transformer.wte.weight.device",
         "lm_head_device": "self.model.transformer.ln_f.weight.device"
     },
     "llama3-8B":{
-        "path": "/home/zhaisonglin/disk/songlin/resources/Llama3/8B/",
+        "path": "path/to/Llama3/8B/",
         "lm_embed_device": "self.model.model.embed_tokens.weight.device",
         "lm_head_device": "self.model.lm_head.weight.device"
     },
     "gemma2-2B":{
-        "path": "/home/zhaisonglin/disk/songlin/resources/Gemma2/2B-it/",
+        "path": "path/to/Gemma2/2B-it/",
         "lm_embed_device": "self.model.model.embed_tokens.weight.device",
         "lm_head_device": "self.model.lm_head.weight.device"
     },
     "phi3-3.8B":{
-        "path": "/home/zhaisonglin/disk/songlin/resources/Phi3/Phi-3-mini-4k-instruct/",
+        "path": "path/to/Phi3/Phi-3-mini-4k-instruct/",
         "lm_embed_device": "self.model.model.embed_tokens.weight.device",
         "lm_head_device": "self.model.lm_head.weight.device"
     }
